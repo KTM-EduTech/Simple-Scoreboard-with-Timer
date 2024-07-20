@@ -2,6 +2,7 @@
 # Simple Scoreboard with Timer
 
 The **Simple Scoreboard with Timer** is an intuitive web-based tool designed to keep track of scores and manage timing for various sports and games. This application features a clean and modern interface, making it easy to use for any event.
+![Simple Scoreboard Screenshot](https://i.ibb.co/bKcCtYS/Scoreboard-Timer.jpg)
 
 ## Key Features
 
