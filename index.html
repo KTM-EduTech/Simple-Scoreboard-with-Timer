@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+        <title>Game Scoreboard</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="scoreboard">
+            <h1>Game Scoreboard</h1>
+            <div class="timer">
+                <p id="timer">00:00</p>
+                <button class="control-button" onclick="startTimer()">
+                    <i class="fas fa-play icon" title="Play"></i> &nbsp;&nbsp;Start
+                </button>
+                <button class="control-button" onclick="stopTimer()">
+                    <i class="fas fa-stop icon" title="Stop"></i> &nbsp;&nbsp;Stop
+                </button>
+                <button class="control-button" onclick="resetTimer()">
+                    <i class="fas fa-redo-alt"></i> &nbsp;&nbsp;Reset
+                </button>
+            </div>
+            <div class="teams">
+                <div class="team">
+                    <input type="text" id="teamAName" class="team-name" value="Team A" />
+                    <p class="score" id="scoreA">0</p>
+                    <div class="score-controls">
+                        <button class="score-button" onclick="decrementScore('A')">➖</button>
+                        <button class="score-button" onclick="incrementScore('A')">➕</button>
+                    </div>
+                </div>
+                <div class="team">
+                    <input type="text" id="teamBName" class="team-name" value="Team B" />
+                    <p class="score" id="scoreB">0</p>
+                    <div class="score-controls">
+                        <button class="score-button" onclick="decrementScore('B')">➖</button>
+                        <button class="score-button" onclick="incrementScore('B')">➕</button>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="control-button" onclick="resetScores()">
+                    <i class="fas fa-redo-alt"></i> &nbsp;&nbsp; Scores
+                </button>
+                <button class="control-button" onclick="printPage()">
+                    <i class="fa-solid fa-print"></i> &nbsp;&nbsp; Scores
+                </button>
+            </div>
+        </div>
+        <footer>
+            <p>© 2024 ICT Click Digital Media | Maintained by KTM EduTech. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
